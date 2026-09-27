@@ -1,3 +1,82 @@
-<marquee>
-    Welcome to our website! Enjoy your stay and explore our content.
+<style>
+    .marq {
+        font-size: 24px;
+        color: #3d3936;
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 2px solid #9f9e9d;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        height: 20px;
+    }
+
+    .marq:hover {
+        color: #ffffff;
+        background-color: #1d78c9;
+    }
+
+    .outlined {
+        border: solid;
+        border-width: 2px;
+        border-color: #9f9e9d;
+        background-color: #f0f0f0;
+        overflow: hidden;
+    }
+</style>
+
+<marquee class="marq">
+    Regular - Welcome to our website! Enjoy your stay and explore our content.
+</marquee>
+
+<marquee class="marq" behavior="alternate">
+    Alternate - Welcome to our website! Enjoy your stay and explore our content.
+</marquee>
+
+<marquee class="marq" behavior="scroll" direction="up" scrollamount="3">
+    Scroll Up - Welcome to our website! Enjoy your stay and explore our content.
+</marquee>
+
+<marquee class="marq" behavior="scroll" direction="down" scrollamount="3">
+    Scroll Down - Welcome to our website! Enjoy your stay and explore our content.
+</marquee>
+
+<marquee class="marq" behavior="scroll" direction="left" scrollamount="5">
+    Scroll Left - Welcome to our website! Enjoy your stay and explore our content.
+</marquee>
+
+<marquee class="marq" behavior="scroll" direction="right" scrollamount="5">
+    Scroll Right - Welcome to our website! Enjoy your stay and explore our content.
+</marquee>
+
+<marquee
+  direction="down"
+  width="250"
+  height="200"
+  behavior="alternate"
+  class="outlined">
+  <marquee behavior="alternate">This text will bounce</marquee>
+</marquee>
+
+<marquee 
+    direction="down" 
+    behavior="alternate"
+    width="250"
+    height="30"
+    class="outlined"
+    >
+    <marquee>
+        Sample text
+    </marquee>
+</marquee>
+
+<marquee 
+    direction="down" 
+    behavior="alternate"
+    width="250"
+    height="30"
+    class="outlined"
+    >
+    <marquee behavior="scroll" direction="right">
+        Sample text
+    </marquee>
 </marquee>
