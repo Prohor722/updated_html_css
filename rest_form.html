@@ -1,8 +1,40 @@
-<form>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    input {
+        width: fit-content;
+    }
+    button {
+        background-color: black;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        color: white;
+        width: fit-content;
+    }
+
+    [type=submit] {
+        background-color: blue;
+    }
+
+    label {
+        margin-bottom: -8px;
+    }
+</style>
+
+<form action="#">
     <label>Name</label>
     <input type="text" title="name">
     <label>Age</label>
     <input type="number" title="age">
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
+
+    <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </div>
 </form>
