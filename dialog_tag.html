@@ -1,0 +1,40 @@
+<style>
+    #openDialog {
+        padding: 6px 12px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    #openDialog:hover {
+        background-color: #0259fa;
+    }
+
+    #myDialog {
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+    }
+
+    #closeDialog {
+        padding: 6px 12px;
+        font-size: 16px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    #closeDialog:hover {
+        background-color: #3a3a3a;
+    }
+</style>
+<button id="openDialog" command="show-modal" commandfor="myDialog">Open Dialog</button>
+
+<dialog id="myDialog">
+  <p>This is a dialog box.</p>
+  <button id="closeDialog" command="close" commandfor="myDialog">Close</button>
+</dialog>
