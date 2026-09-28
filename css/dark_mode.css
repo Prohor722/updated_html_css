@@ -1,5 +1,5 @@
 :root {
-    --bg1: #ffffff;
+    --bg1: #ebebeb;
     --bg2: #e0e0e0;
     --text: #000000;
     --border: #cccccc;
@@ -11,13 +11,18 @@ body:has(#dark:checked){
     --border: #444444;
 }
 #navbar {
-    width: 100%;
     background-color: var(--bg2);
     color: var(--text);
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#dark {
+    height: 20px;
+    width: 20px;
 }
 body {
     background-color: var(--bg1);
@@ -28,7 +33,7 @@ body {
 .article {
     display: flex;
     gap: 20px;
-    border: 1px solid #333;
+    border: 1px solid var(--border);
     background-color: var(--bg2);
     color: var(--text);
     padding: 20px;
@@ -37,6 +42,7 @@ body {
     width: fit-content;
     height: auto;
     margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .article-image {
