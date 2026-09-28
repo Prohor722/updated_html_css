@@ -1,8 +1,35 @@
 <style>
-    
+#fuel-meter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+ meter {
+    width: 40%;
+    height: 25px;
+ }
 </style>
 
-Fuel
-<meter id="fuel" value="0.6" min="0" max="1" low="0.25" high="0.75" optimum="0.5">
-     60% 
-</meter> 
+<div id="fuel-meter">
+    <b>Fuel Level:</b>
+    <meter 
+        id="fuel" 
+        min="0" 
+        max="100" 
+        low="33" 
+        high="66" 
+        optimum="80"
+        >
+    </meter> 
+</div>
+
+
+<script>
+  const fuel = 90;
+  const meter = document.getElementById("fuel");
+  meter.value = fuel;
+  meter.innerHTML = fuel + "%";
+</script>
