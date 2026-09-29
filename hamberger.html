@@ -1,11 +1,58 @@
-<input type="checkbox" id="menu-toggle" hidden>
+<style>
+    .menu-list {
+        display: none;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 200px;
+    }
 
+    #menu-toggle:checked ~ .menu .menu-list {
+        display: block;
+    }
+
+    #menu-toggle:checked ~ .close-icon {
+        display: block;
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+    #menu-toggle:checked ~ .menu-icon {
+        display: none;
+    } 
+
+    .menu-icon {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-options {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .menu-options:hover {
+        background-color: #4b4b4b;
+        color: white;
+    }
+
+    .menu-options a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+</style>
+<input type="checkbox" id="menu-toggle" hidden>
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<label for="menu-toggle" class="close-icon" hidden>&times;</label>
 <nav class="menu">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <ul class="menu-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="menu-options"><a href="#">Home</a></li>
+        <li class="menu-options"><a href="#">About</a></li>
+        <li class="menu-options"><a href="#">Services</a></li>
+        <li class="menu-options"><a href="#">Contact</a></li>
     </ul>
 </nav>
