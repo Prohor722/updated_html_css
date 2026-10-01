@@ -1,1 +1,31 @@
-<img src="" alt="Top Image" class="top-image">
+<style>
+    .card {
+        display: grid;
+        width: 400px;
+    }
+    .card > * {
+        grid-area: 1 / 1;
+    }
+    .card .card-title {
+        align-self: end;
+    }
+    .top-image {
+        width: 400px;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+    .card-title {
+        color: white;
+        margin-left: 20px;
+        font-size: 32px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-align: right;
+    }
+</style>
+<div class="card">
+    <img 
+        src="https://images.hdqwalls.com/download/doctor-doom-the-supreme-bn-1366x768.jpg" 
+        alt="Dr Doom" class="top-image">
+    <h2 class="card-title">Dr Doom</h2>
+</div>
