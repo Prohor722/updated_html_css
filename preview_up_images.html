@@ -1,3 +1,33 @@
+<style>
+    .drop-zone {
+        width: 320px;
+        display: inline-block;
+        padding: 20px;
+        border: 2px dashed #333;
+        border-radius: 12px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+        color: #999;
+        transition: background-color 0.3s, border-color 0.3s ease;
+    }
+    .drop-zone:hover {
+        border-color: #00eaff;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 70px);
+        gap: 8px;
+    }
+
+    .grid img {
+        width: 70px;
+        height: 70px;
+        border-radius: 8px;
+        object-fit: cover;
+        animation: pop 0.3s ease;
+    }
+</style>
 <body>
     <label class="drop-zone">
         <input type="file" id="multiInput" accept="image/*" multiple>
